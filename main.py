@@ -4,13 +4,13 @@ from sender import send_email
 
 SUBSCRIBERS = [
     {"name": "Eddy", "email": "ediomoetesin40@gmail.com"},
-    #{"name": "Raji", "email":"Opeolurajisodiq@gmail.com"},
-    #{"name": "Nelly", "email":"nellytracy90@gmail.com"},
-    #{"name": "Meb", "email":"al_meb.jr@icloud.com"},
-    #{"name": "Chilet", "email":"Okekechiletaram@gmail.com"},
-    #{"name": "Aniesua", "email":"aniesuaessiettjnr@gmail.com"},
-    #{"name": "Jones", "email":"Jjoe9931@gmail.com"},
-    #{"name": "Idongesit", "email":"lelouch4britania@gmail.com"},
+    {"name": "Raji", "email":"Opeolurajisodiq@gmail.com"},
+    {"name": "Nelly", "email":"nellytracy90@gmail.com"},
+    {"name": "Meb", "email":"al_meb.jr@icloud.com"},
+    {"name": "Chilet", "email":"Okekechiletaram@gmail.com"},
+    {"name": "Aniesua", "email":"aniesuaessiettjnr@gmail.com"},
+    {"name": "Jones", "email":"Jjoe9931@gmail.com"},
+    {"name": "Idongesit", "email":"lelouch4britania@gmail.com"},
 
 ]
 
