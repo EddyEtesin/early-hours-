@@ -19,15 +19,20 @@ def get_exchange_rates():
 
 def get_brent_crude():
     ticker = yf.Ticker("BZ=F")
-    data = ticker.history(period="2d")
-    
+    data = ticker.history(period="5d")
+
+    if len(data) < 2:
+        # Fallback: not enough data to compute change
+        latest = round(data["Close"].iloc[-1], 2) if len(data) == 1 else 0.0
+        return {"price": float(latest), "change": 0.0}
+
     latest = round(data["Close"].iloc[-1], 2)
     previous = round(data["Close"].iloc[-2], 2)
     change = round(((latest - previous) / previous) * 100, 2)
-    
+
     return {
-    "price": float(round(data["Close"].iloc[-1], 2)),
-    "change": float(round(((latest - previous) / previous) * 100, 2))
+        "price": float(latest),
+        "change": float(change)
     }
 
 def get_lagos_weather():
